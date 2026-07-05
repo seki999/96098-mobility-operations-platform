@@ -6,7 +6,7 @@ type Column<T> = {
   render?: (row: T) => React.ReactNode;
 };
 
-// DataTable は一覧画面で共通利用する軽量テーブルです。
+// DataTable is a shared dense table for operational list screens.
 export function DataTable<T extends { id: number }>({ columns, rows }: { columns: Column<T>[]; rows: T[] }) {
   return (
     <div className="table-wrap">
@@ -34,7 +34,7 @@ export function DataTable<T extends { id: number }>({ columns, rows }: { columns
   );
 }
 
-// Badge は状態を視覚的に区別するための小さなラベルです。
+// Badge highlights operational status values without exposing internal details.
 export function Badge({ value }: { value: string }) {
   return <span className={`badge ${value}`}>{value}</span>;
 }

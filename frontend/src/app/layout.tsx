@@ -7,22 +7,28 @@ export const metadata = {
 };
 
 const links = [
-  ["Dashboard", "/"],
-  ["Vehicles", "/vehicles"],
+  ["Overview", "/"],
+  ["Fleet", "/vehicles"],
   ["Drivers", "/drivers"],
-  ["Operation Tasks", "/operation-tasks"],
+  ["Tasks", "/operation-tasks"],
   ["Incidents", "/incidents"],
   ["API", "/api-calls"]
 ];
 
-// RootLayout は全画面で共通のナビゲーションを提供します。
+// RootLayout provides the shared operations console frame.
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="ja">
       <body>
         <div className="shell">
           <aside className="sidebar">
-            <div className="brand">96098 Mobility Operations Platform</div>
+            <div className="brand">
+              <span className="brand-mark">96</span>
+              <span>
+                Mobility Ops
+                <small>Case 96098</small>
+              </span>
+            </div>
             <nav className="nav" aria-label="Primary navigation">
               {links.map(([label, href]) => (
                 <Link href={href} key={href}>
@@ -30,8 +36,25 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 </Link>
               ))}
             </nav>
+            <div className="sidebar-panel">
+              <span>Environment</span>
+              <strong>Local Portfolio</strong>
+              <small>No real company or customer data</small>
+            </div>
           </aside>
-          <main className="main">{children}</main>
+          <main className="main">
+            <header className="topbar">
+              <div>
+                <span className="eyebrow">Operations control center</span>
+                <strong>Neutral mobility support platform</strong>
+              </div>
+              <div className="topbar-actions">
+                <span className="sync-dot" />
+                <span>API fallback ready</span>
+              </div>
+            </header>
+            {children}
+          </main>
         </div>
       </body>
     </html>
