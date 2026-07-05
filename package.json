@@ -1,0 +1,12 @@
+{
+  "name": "96098-mobility-operations-platform",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "screenshots": "tsx scripts/capture-screenshots.ts"
+  },
+  "devDependencies": {
+    "playwright": "^1.57.0",
+    "tsx": "^4.21.0"
+  }
+}

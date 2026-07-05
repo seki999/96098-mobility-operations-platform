@@ -1,0 +1,5 @@
+[
+  { "id": 1, "code": "VH-96098-001", "type": "compact-ev", "status": "active", "serviceAreaId": 1, "utilizationPct": 78.5 },
+  { "id": 2, "code": "VH-96098-002", "type": "accessible-van", "status": "maintenance", "serviceAreaId": 2, "utilizationPct": 35.0 },
+  { "id": 3, "code": "VH-96098-003", "type": "standard-ev", "status": "active", "serviceAreaId": 2, "utilizationPct": 91.2 }
+]

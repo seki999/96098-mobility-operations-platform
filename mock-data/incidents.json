@@ -1,0 +1,4 @@
+[
+  { "id": 1, "incidentCode": "INC-96098-501", "operationTaskId": 2, "severity": "medium", "status": "investigating", "summary": "Delayed status update from terminal" },
+  { "id": 2, "incidentCode": "INC-96098-502", "operationTaskId": 1, "severity": "low", "status": "open", "summary": "Route confirmation requires review" }
+]

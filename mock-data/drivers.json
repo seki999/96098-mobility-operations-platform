@@ -1,0 +1,5 @@
+[
+  { "id": 1, "code": "DR-96098-A01", "displayName": "Operator Alpha", "status": "available", "skillLevel": "senior", "serviceAreaId": 1 },
+  { "id": 2, "code": "DR-96098-B02", "displayName": "Operator Bravo", "status": "assigned", "skillLevel": "standard", "serviceAreaId": 2 },
+  { "id": 3, "code": "DR-96098-C03", "displayName": "Operator Charlie", "status": "available", "skillLevel": "standard", "serviceAreaId": 3 }
+]

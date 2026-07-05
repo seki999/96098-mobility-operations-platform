@@ -1,0 +1,4 @@
+[
+  { "id": 1, "taskCode": "TASK-96098-1001", "vehicleId": 1, "driverId": 1, "serviceAreaId": 1, "status": "planned", "priority": "high", "notes": "Hub transfer simulation" },
+  { "id": 2, "taskCode": "TASK-96098-1002", "vehicleId": 3, "driverId": 2, "serviceAreaId": 2, "status": "in_progress", "priority": "medium", "notes": "Central zone recurring operation" }
+]
